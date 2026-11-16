@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { ShieldCheck, ShieldAlert, ShieldX, Search, Activity, Clock3, Trash2, ExternalLink, Network, LockKeyhole, Github, Globe2, ArrowUpRight } from "lucide-react";
 
-const API = (import.meta.env.VITE_API_URL || "/api").replace(/\/$/, "");
+const API = (import.meta.env.VITE_API_URL || "https://urlguard-api.onrender.com/api").replace(/\/$/, "");
 const samples = ["https://www.google.com", "http://secure-login-account.example.com/verify", "https://paypal.com.security-check.example.net/login", "htp:/bad url"];
 
 function StatusIcon({ status }) {
